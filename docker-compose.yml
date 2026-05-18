@@ -6,6 +6,8 @@ services:
     volumes:
       - ./main.py:/app/main.py
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
       - PYTHONUNBUFFERED=1
       - CHROMA_TELEMETRY=false

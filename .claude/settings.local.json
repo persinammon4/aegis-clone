@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"from dotenv import load_dotenv; load_dotenv\\(\\); from anthropic import Anthropic; c = Anthropic\\(\\); m = c.messages.create\\(model='claude-opus-4-7', max_tokens=50, messages=[{'role':'user','content':'say hi'}]\\); print\\('SUCCESS:', m.content[0].text\\)\" 2>&1)"
+    ]
+  }
+}
