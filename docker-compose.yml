@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./main.py:/app/main.py
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CHROMA_TELEMETRY=false
